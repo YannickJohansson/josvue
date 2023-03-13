@@ -11,8 +11,7 @@
     "allowSyntheticDefaultImports": true,
     "forceConsistentCasingInFileNames": true,
     "useDefineForClassFields": true,
-    "inlineSourceMap": true,
-    "inlineSources": true ,
+    "sourceMap": true,
     "baseUrl": ".",
     "types": [
       "webpack-env"

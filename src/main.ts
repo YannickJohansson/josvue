@@ -5,8 +5,6 @@ import router from './router'
 import vuetify from './plugins/vuetify'
 import VueApollo from 'vue-apollo'
 import ApolloClient from 'apollo-boost'
-
-
 Vue.use(VueApollo)
 
 Vue.config.productionTip = false
@@ -17,16 +15,11 @@ new Vue({
   render: h => h(App)
 }).$mount('#app')
 
-new Vue({
-  apollo: {
-    // Apollo specific options
-  },
-})
 
 
 const apolloClient = new ApolloClient({
   // You should use an absolute URL here
-  uri: 'http://localhost:4000/'
+  uri: 'https://api.graphcms.com/simple/v1/awesomeTalksClone'
 })
 
 const apolloProvider = new VueApollo({
@@ -39,4 +32,3 @@ new Vue({
   apolloProvider,
   render: h => h(App),
 })
-
